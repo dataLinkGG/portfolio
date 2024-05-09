@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
+import { Menu } from "antd";
 
 const NavBar = (): JSX.Element => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
+    <Menu mode="horizontal">
+      <Menu.Item key="home">
+        <Link to="/">Home</Link>
+      </Menu.Item>
+      <Menu.Item key="contact">
+        <Link to="/contact">Contact</Link>
+      </Menu.Item>
+    </Menu>
   );
 };
 

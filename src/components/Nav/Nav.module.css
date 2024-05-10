@@ -1,25 +1,3 @@
-/* #desktop-nav {
-}
-
-#hamburger-nav {
-}
-
-.logo {
-}
-
-.nav-links {
-}
-
-.hamburger-menu {
-}
-.hamburger-icon {
-}
-.menuLinks {
-
-} */
-
-/* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -39,14 +17,10 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
-
-/* DESKTOP NAV */
 
 nav,
 .navLinks {
@@ -85,8 +59,6 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
-
-/* HAMBURGER MENU */
 
 #hamburgerNav {
   display: none;
@@ -167,8 +139,6 @@ a:hover {
   transform: none;
 }
 
-/* SECTIONS */
-
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -180,8 +150,6 @@ section {
 .section-container {
   display: flex;
 }
-
-/* PROFILE SECTION */
 
 #profile {
   display: flex;
@@ -227,14 +195,10 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
-
-/* BUTTONS */
 
 .btn-container {
   display: flex;
@@ -281,8 +245,6 @@ section {
 .btn-container {
   gap: 1rem;
 }
-
-/* ABOUT SECTION */
 
 #about {
   position: relative;
@@ -335,8 +297,6 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-
 #experience {
   position: relative;
 }
@@ -374,8 +334,6 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-
 #projects {
   position: relative;
 }
@@ -400,8 +358,6 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
-
-/* CONTACT */
 
 #contact {
   display: flex;
@@ -440,8 +396,6 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
-
-/* FOOTER SECTION */
 
 footer {
   height: 26vh;

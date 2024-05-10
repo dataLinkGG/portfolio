@@ -48,12 +48,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        className="icon arrow"
-        onClick={() => (location.href = "./#experience")} // Use onClick handler
-      />
     </section>
   );
 };

@@ -129,12 +129,6 @@ const Experience: React.FC = () => {
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        className="icon arrow"
-        onClick={() => {}}
-      />
     </section>
   );
 };

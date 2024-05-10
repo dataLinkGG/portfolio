@@ -39,11 +39,6 @@ const Nav = (): JSX.Element => {
                 </a>
               </li>
               <li>
-                <a href="#projects" onClick={toggleMenu}>
-                  Projects
-                </a>
-              </li>
-              <li>
                 <a href="#contact" onClick={toggleMenu}>
                   Contact
                 </a>
@@ -61,9 +56,6 @@ const Nav = (): JSX.Element => {
               </li>
               <li>
                 <a href="#experience">Experience</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>

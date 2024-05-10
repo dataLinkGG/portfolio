@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Profile: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1400);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section id="profile">
-      <div className="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
+      {isMobile ? undefined : (
+        <div className="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        </div>
+      )}
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
         <h1 className="title">John Doe</h1>

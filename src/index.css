@@ -458,7 +458,7 @@ footer p {
   }
   #profile,
   .section-container {
-    display: block;
+    display: flex;
   }
   .arrow {
     display: none;

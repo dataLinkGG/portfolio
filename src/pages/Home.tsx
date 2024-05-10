@@ -2,6 +2,7 @@ import React from "react";
 import Profile from "./Sections/Profile";
 import About from "./Sections/About";
 import Experience from "./Sections/Experience";
+import Contact from "./Sections/Contact";
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <Profile />
       <About />
       <Experience />
+      <Contact />
     </>
   );
 };

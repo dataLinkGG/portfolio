@@ -17,7 +17,7 @@ const Nav = (): JSX.Element => {
   }, []);
 
   return (
-    <>
+    <div className="navigation">
       {isMobile ? (
         <nav id="hamburgerNav">
           <div className={styles.logo}>John Doe</div>
@@ -64,7 +64,7 @@ const Nav = (): JSX.Element => {
           </div>
         </nav>
       )}
-    </>
+    </div>
   );
 };
 

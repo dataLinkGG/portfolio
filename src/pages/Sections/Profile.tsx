@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Nav from "../../components/Nav/Nav";
 
 const Profile: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
@@ -11,6 +12,7 @@ const Profile: React.FC = () => {
 
   return (
     <section>
+      <Nav />
       <div id="profile">
         {isMobile ? undefined : (
           <div className="section__pic-container">

@@ -144,17 +144,24 @@ a:hover {
 
 section {
   padding: 4rem;
-  height: 96vh;
   height: 100vh;
-  /* margin: 0 10rem; */
   box-sizing: border-box;
   min-height: fit-content;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: center; /* SNAP functionality*/
 }
 
-.section-container {
-  display: flex;
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 100vh; /*now we have a fit, so it actually snaps*/
+    scroll-snap-type: y mandatory; /* SNAP mandatory ou proximity */
+    overflow-y: scroll; /*SNAP overflow quando houver scroll vertical */
+  }
+
+  .section-container {
+    display: flex;
+  }
 }
 
 /* PROFILE SECTION */
@@ -531,4 +538,9 @@ footer p {
   .text-container {
     text-align: justify;
   }
+}
+
+.navigation {
+  height: 80px;
+  width: 100%;
 }

@@ -30,7 +30,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 80px;
 }
 
 .navLinks {
@@ -140,11 +140,20 @@ a:hover {
 }
 
 section {
-  padding-top: 4vh;
+  /* padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: fit-content; */
+
+  height: 100vh;
+  /* Flexbox */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; /* só pro conteúdo ficar embaixo do header*/
+  /* Snap */
+  scroll-snap-align: center; /* SNAP: onde o snap deve parar "*/
 }
 
 .section-container {
@@ -152,10 +161,10 @@ section {
 }
 
 #profile {
-  display: flex;
+  display: none;
   justify-content: center;
+  flex-direction: row;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {

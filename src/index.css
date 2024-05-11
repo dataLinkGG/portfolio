@@ -33,12 +33,6 @@ nav,
   display: flex;
 }
 
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
-
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -149,11 +143,14 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding: 4rem;
   height: 96vh;
-  margin: 0 10rem;
+  height: 100vh;
+  /* margin: 0 10rem; */
   box-sizing: border-box;
   min-height: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-container {
@@ -166,7 +163,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 80vh; /*i want header to 20vh*/
 }
 
 .section__pic-container {
@@ -264,17 +261,18 @@ section {
 /* ABOUT SECTION */
 
 #about {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem; /*this is so the text isn't just bellow the container*/
 }
 
 .about-details-container {
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -317,7 +315,9 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* why relative? */
 }
 
 .experience-sub-title {
@@ -384,9 +384,7 @@ article .icon {
 
 #contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 70vh;
 }
 
 .contact-info-upper-container {

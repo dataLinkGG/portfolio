@@ -19,7 +19,7 @@ const About: React.FC = () => {
             <div className="about-containers">
               <div className="details-container">
                 <img
-                  src="./assets/experience.png"
+                  src="src/assets/experience.png"
                   alt="Experience icon"
                   className="icon"
                 />
@@ -32,7 +32,7 @@ const About: React.FC = () => {
               </div>
               <div className="details-container">
                 <img
-                  src="./assets/education.png"
+                  src="src/assets/education.png"
                   alt="Education icon"
                   className="icon" // Use className instead of class for consistency
                 />

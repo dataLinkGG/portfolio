@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
       <div className="contact-info-upper-container">
         <div className="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="src/assets/email.png"
             alt="Email icon"
             className="icon contact-icon email-icon"
           />
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="src/assets/linkedin.png"
             alt="LinkedIn icon"
             className="icon contact-icon"
           />

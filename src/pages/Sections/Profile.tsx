@@ -20,7 +20,7 @@ const Profile: React.FC = () => {
         {isMobile ? undefined : (
           <div className="section__pic-container">
             <img
-              src="./assets/profile-pic.png"
+              src="src/assets/profile-pic.png"
               alt={`${myName} profile picture`}
             />
           </div>
@@ -45,13 +45,13 @@ const Profile: React.FC = () => {
           </div>
           <div id="socials-container">
             <img
-              src="./assets/linkedin.png"
+              src="src/assets/linkedin.png"
               alt="My LinkedIn profile"
               className="icon"
               onClick={() => (location.href = "https://linkedin.com/")} // Inline function
             />
             <img
-              src="./assets/github.png"
+              src="src/assets/github.png"
               alt="My Github profile"
               className="icon"
               onClick={() => (location.href = "https://github.com/")} // Inline function

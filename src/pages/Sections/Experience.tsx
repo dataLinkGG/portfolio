@@ -65,6 +65,16 @@ const Experience: React.FC = () => {
       expertise: "Basic",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     },
+    {
+      name: "Pytest",
+      expertise: "Basic",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg",
+    },
+    {
+      name: "Jest",
+      expertise: "Basic",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+    },
   ];
 
   return (

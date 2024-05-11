@@ -10,6 +10,9 @@ const Profile: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const myName = "Thomas Cionek";
+  const jobTitle = "Junior Full Stack Developer";
+
   return (
     <section>
       <Nav />
@@ -18,14 +21,14 @@ const Profile: React.FC = () => {
           <div className="section__pic-container">
             <img
               src="./assets/profile-pic.png"
-              alt="John Doe profile picture"
+              alt={`${myName} profile picture`}
             />
           </div>
         )}
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
-          <h1 className="title">John Doe</h1>
-          <p className="section__text__p2">Frontend Developer</p>
+          <h1 className="title">{myName}</h1>
+          <p className="section__text__p2">{jobTitle}</p>
           <div className="btn-container">
             <button
               className="btn btn-color-2"

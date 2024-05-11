@@ -3,13 +3,14 @@ import styles from "./Skill.module.css"; // Use lowercase 'styles' for consisten
 type SkillProps = {
   name: string;
   expertise: "Basic" | "Intermediate" | "Experienced";
+  icon?: string;
 };
 
-const Skill: React.FC<SkillProps> = ({ name, expertise }) => {
+const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
   return (
     <article className={styles.article}>
       <img
-        src="src/assets/checkmark.png"
+        src={icon || "src/assets/checkmark.png"}
         alt={`Experience in ${name}`}
         className={styles.icon}
       />

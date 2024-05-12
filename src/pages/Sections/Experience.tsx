@@ -8,10 +8,6 @@ interface Skill {
 }
 
 /*
-https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg"
-https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
-https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/liquibase/liquibase-original-wordmark.svg"
 https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
 */
 
@@ -76,6 +72,16 @@ const Experience: React.FC = () => {
       name: "Vim",
       expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
+    },
+    {
+      name: "VS Code",
+      expertise: 2,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    },
+    {
+      name: "Liquibase",
+      expertise: 1,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/liquibase/liquibase-original-wordmark.svg",
     },
   ];
 

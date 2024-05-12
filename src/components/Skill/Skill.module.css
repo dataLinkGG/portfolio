@@ -18,13 +18,16 @@ article .icon {
 }
 
 .proficiency1 {
-  color: #945b22;
+  color: #7a4b1c;
+  font-weight: 200; /* Light */
 }
 
 .proficiency2 {
-  color: rgb(124, 124, 124);
+  color: rgb(99, 99, 99);
+  font-weight: 500; /* Light */
 }
 
 .proficiency3 {
-  color: rgb(209, 150, 1);
+  color: goldenrod;
+  font-weight: 600; /* Bold */
 }

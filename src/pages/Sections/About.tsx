@@ -1,3 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBriefcase,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
+
 import React from "react";
 
 const About: React.FC = () => {
@@ -15,11 +21,7 @@ const About: React.FC = () => {
           <div className="about-details-container">
             <div className="about-containers">
               <div className="details-container">
-                <img
-                  src="src/assets/experience.png"
-                  alt="Experience icon"
-                  className="icon"
-                />
+                <FontAwesomeIcon icon={faBriefcase} />
                 <h3>Experience</h3>
                 <p>
                   {years}+ year
@@ -28,11 +30,12 @@ const About: React.FC = () => {
                 </p>
               </div>
               <div className="details-container">
-                <img
+                {/* <img
                   src="src/assets/education.png"
                   alt="Education icon"
                   className="icon" // Use className instead of class for consistency
-                />
+                /> */}
+                <FontAwesomeIcon icon={faGraduationCap} />
                 <h3>Education</h3>
                 <p>
                   B.Sc. Bachelors Degree

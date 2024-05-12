@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
+import { DownloadOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 
 const Profile: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
@@ -31,18 +33,23 @@ const Profile: React.FC = () => {
           <h1 className="title">{myName}</h1>
           <p className="section__text__p2">{jobTitle}</p>
           <div className="btn-container">
-            <button
-              className="btn btn-color-2"
-              onClick={() => window.open("./assets/resume-example.pdf")} // Inline function
+            <Button
+              type="default"
+              shape="round"
+              size={"large"}
+              icon={<DownloadOutlined />}
+              onClick={() => {}}
             >
               Download CV
-            </button>
-            <button
-              className="btn btn-color-1"
-              onClick={() => (location.href = "./#contact")} // Inline function
+            </Button>
+            <Button
+              type="primary"
+              shape="round"
+              size={"large"}
+              onClick={() => {}}
             >
-              Contact Info
-            </button>
+              Contact info
+            </Button>
           </div>
           <div id="socials-container">
             <img

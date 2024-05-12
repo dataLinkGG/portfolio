@@ -276,6 +276,7 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-inline: 25%;
 }
 
 .about-containers {

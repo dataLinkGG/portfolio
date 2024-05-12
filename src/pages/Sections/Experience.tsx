@@ -16,7 +16,7 @@ https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original
 */
 
 const Experience: React.FC = () => {
-  const languages: Skill[] = [
+  const skills: Skill[] = [
     {
       name: "Python",
       expertise: 3,
@@ -32,9 +32,6 @@ const Experience: React.FC = () => {
       expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     },
-  ];
-
-  const techs: Skill[] = [
     {
       name: "Linux",
       expertise: 3,
@@ -75,7 +72,6 @@ const Experience: React.FC = () => {
       expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
     },
-
     {
       name: "Vim",
       expertise: 3,
@@ -86,21 +82,13 @@ const Experience: React.FC = () => {
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
-      <h1 className="title">Experience</h1>
+      <h1 className="title">My Skill Set</h1>
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
             <h2 className="experience-sub-title">Programming Languages</h2>
             <div className="article-container">
-              {languages.map((skill) => (
-                <Skill key={skill.name} {...skill} />
-              ))}
-            </div>
-          </div>
-          <div className="details-container">
-            <h2 className="experience-sub-title">Technologies</h2>
-            <div className="article-container">
-              {techs.map((skill) => (
+              {skills.map((skill) => (
                 <Skill key={skill.name} {...skill} />
               ))}
             </div>

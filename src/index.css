@@ -176,7 +176,7 @@ section {
 
 .pic {
   border-radius: 50%;
-  filter: grayscale(1);
+  filter: grayscale(0.7);
 }
 
 .section__pic-container {

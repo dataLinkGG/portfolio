@@ -331,6 +331,7 @@ section {
 #experience {
   display: flex;
   flex-direction: column;
+  padding-inline: 25%;
   position: relative; /* why relative? */
 }
 
@@ -460,6 +461,7 @@ footer p {
   #profile,
   .section-container {
     display: flex;
+    justify-content: center;
   }
   .arrow {
     display: none;

@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Badge, Card } from "antd";
 import styles from "./Skill.module.css";
 import Meta from "antd/es/card/Meta";
 
@@ -26,20 +26,17 @@ const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
   const expertiseText = expertiseMap[expertise as ExpertiseLevel] ?? "Unknown";
 
   return (
-    <Card>
-      <article>
-        <img
-          src={icon || "src/assets/checkmark.png"}
-          alt={`Experience in ${name}`}
-          className={styles.icon}
-        />
-        <Meta
-          className={styles.meta}
-          title={name}
-          description={expertiseText}
-        />
-      </article>
-    </Card>
+    <article>
+      <img
+        src={icon || "src/assets/checkmark.png"}
+        alt={`Experience in ${name}`}
+        className={styles.icon}
+      />
+      <div>
+        <h1>{name}</h1>
+        <p className={styles[`skill${expertise}`]}>{expertiseText}</p>
+      </div>
+    </article>
   );
 };
 

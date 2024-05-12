@@ -19,17 +19,17 @@ const Experience: React.FC = () => {
   const languages: Skill[] = [
     {
       name: "Python",
-      expertise: 1,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     },
     {
       name: "JavaScript",
-      expertise: 1,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
       name: "PostegreSQL",
-      expertise: 1,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     },
   ];
@@ -37,27 +37,27 @@ const Experience: React.FC = () => {
   const techs: Skill[] = [
     {
       name: "Linux",
-      expertise: 1,
+      expertise: 4,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
     },
     {
       name: "Git/Github",
-      expertise: 1,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     },
     {
       name: "Flask",
-      expertise: 1,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
     },
     {
       name: "React",
-      expertise: 1,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     },
     {
       name: "Postman",
-      expertise: 1,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
     },
     {
@@ -67,18 +67,18 @@ const Experience: React.FC = () => {
     },
     {
       name: "Pytest",
-      expertise: 1,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg",
     },
     {
       name: "Jest",
-      expertise: 1,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
     },
 
     {
       name: "Vim",
-      expertise: 1,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
     },
   ];

@@ -9,7 +9,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #d3e2f1 0%, #e0e8f8 50%, #ebeffc 100%);
 }
 
 html {
@@ -542,4 +541,27 @@ footer p {
 .navigation {
   height: 80px;
   width: 100%;
+}
+
+.glass {
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  background: linear-gradient(
+    50deg,
+    rgba(0, 227, 212, 0.2),
+    rgba(166, 0, 255, 0.2)
+  );
+  box-shadow: 0 26px 2pc, rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  text-align: left;
+  color: aliceblue;
+
+  transition: transform 0.4s ease-in;
+}
+
+.glass:hover {
+  transform: scale(1.1);
 }

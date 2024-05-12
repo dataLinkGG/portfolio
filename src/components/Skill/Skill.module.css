@@ -1,5 +1,6 @@
 article {
   display: flex;
+  cursor: default;
   width: 10rem;
   align-items: center;
   justify-content: flex-start;
@@ -7,27 +8,29 @@ article {
 }
 
 article .icon {
-  cursor: default;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
-.meta {
-  line-height: 1.2; /* Reduce line height to decrease space */
-  margin-bottom: 0; /* Remove default margin-bottom */
+article:hover {
+  transition: transform 0.4s ease-in;
+  transform: scale(1.1);
 }
 
 .proficiency1 {
-  color: #7a4b1c;
-  font-weight: 200; /* Light */
+  /* color: #7a4b1c; */
+  font-weight: 200;
+  font-size: xx-small;
 }
 
 .proficiency2 {
-  color: rgb(99, 99, 99);
-  font-weight: 500; /* Light */
+  /* color: rgb(99, 99, 99); */
+  font-weight: 500;
+  font-size: xx-small;
 }
 
 .proficiency3 {
-  color: goldenrod;
-  font-weight: 600; /* Bold */
+  /* color: goldenrod; */
+  font-weight: 600;
+  font-size: xx-small;
 }

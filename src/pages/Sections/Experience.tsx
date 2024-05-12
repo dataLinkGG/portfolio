@@ -3,7 +3,7 @@ import Skill from "../../components/Skill/Skill";
 
 interface Skill {
   name: string;
-  expertise: "Basic" | "Intermediate" | "Experienced";
+  expertise: number;
   icon: string;
 }
 
@@ -19,17 +19,17 @@ const Experience: React.FC = () => {
   const languages: Skill[] = [
     {
       name: "Python",
-      expertise: "Intermediate",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     },
     {
       name: "JavaScript",
-      expertise: "Intermediate",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
       name: "PostegreSQL",
-      expertise: "Basic",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     },
   ];
@@ -37,43 +37,49 @@ const Experience: React.FC = () => {
   const techs: Skill[] = [
     {
       name: "Linux",
-      expertise: "Experienced",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
     },
     {
       name: "Git/Github",
-      expertise: "Intermediate",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     },
     {
       name: "Flask",
-      expertise: "Intermediate",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
     },
     {
       name: "React",
-      expertise: "Intermediate",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     },
     {
       name: "Postman",
-      expertise: "Intermediate",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
     },
     {
       name: "Figma",
-      expertise: "Basic",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     },
     {
       name: "Pytest",
-      expertise: "Basic",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg",
     },
     {
       name: "Jest",
-      expertise: "Basic",
+      expertise: 1,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+    },
+
+    {
+      name: "Vim",
+      expertise: 1,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
     },
   ];
 

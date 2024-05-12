@@ -1,6 +1,7 @@
 article {
   display: flex;
   width: 10rem;
+  align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
 }
@@ -9,4 +10,9 @@ article .icon {
   cursor: default;
   width: 30px;
   height: 30px;
+}
+
+.meta {
+  line-height: 1.2; /* Reduce line height to decrease space */
+  margin-bottom: 0; /* Remove default margin-bottom */
 }

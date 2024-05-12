@@ -20,8 +20,9 @@ const Profile: React.FC = () => {
         {isMobile ? undefined : (
           <div className="section__pic-container">
             <img
-              src="src/assets/profile-pic.png"
+              src="src/assets/profile-pic.jpg"
               alt={`${myName} profile picture`}
+              className="pic"
             />
           </div>
         )}

@@ -3,9 +3,6 @@ import React from "react";
 const About: React.FC = () => {
   // No changes needed here, functional components don't use constructors
 
-  const summary = `
-  Full Stack Developer with +1 year of experience. Proficient in various operating systems. Solid foundation in Linux, having used various distributions for nearly 10 years, with a keen interest in experimenting with commands, customization, and troubleshooting. Gained international exposure during a 4-year stint in Poland, where he studied Computer Science and interacted with exchange students from around the world. Seeking new junior-level opportunities as a front end, back end or full stack developer`;
-
   const jobTitle = "Full Stack Development";
   const years = 1;
 
@@ -45,7 +42,23 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="text-container">
-              <p>{summary}</p>
+              <p>
+                Full Stack Developer with +1 year of experience. <br />
+                <br />
+                Proficient in various operating systems. Solid foundation in
+                Linux, having used various distributions for nearly 10 years,
+                with a keen interest in experimenting with commands,
+                customization, and troubleshooting.
+                <br />
+                <br />
+                Gained international exposure during a 4-year stint in Poland,
+                where he studied Computer Science and interacted with exchange
+                students from around the world.
+                <br />
+                <br />
+                Seeking new junior-level opportunities as a front end, back end
+                or full stack developer
+              </p>
             </div>
           </div>
         </div>

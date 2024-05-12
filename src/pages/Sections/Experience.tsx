@@ -82,11 +82,10 @@ const Experience: React.FC = () => {
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
-      <h1 className="title">My Skill Set</h1>
+      <h1 className="title">Skill Set</h1>
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
-            <h2 className="experience-sub-title">Programming Languages</h2>
             <div className="article-container">
               {skills.map((skill) => (
                 <Skill key={skill.name} {...skill} />

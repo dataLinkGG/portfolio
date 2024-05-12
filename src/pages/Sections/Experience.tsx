@@ -7,10 +7,6 @@ interface Skill {
   icon: string;
 }
 
-/*
-https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
-*/
-
 const Experience: React.FC = () => {
   const skills: Skill[] = [
     {

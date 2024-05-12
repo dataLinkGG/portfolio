@@ -7,8 +7,6 @@ import {
 import React from "react";
 
 const About: React.FC = () => {
-  // No changes needed here, functional components don't use constructors
-
   const jobTitle = "Full Stack Development";
   const years = 1;
 
@@ -30,11 +28,6 @@ const About: React.FC = () => {
                 </p>
               </div>
               <div className="details-container">
-                {/* <img
-                  src="src/assets/education.png"
-                  alt="Education icon"
-                  className="icon" // Use className instead of class for consistency
-                /> */}
                 <FontAwesomeIcon icon={faGraduationCap} />
                 <h3>Education</h3>
                 <p>

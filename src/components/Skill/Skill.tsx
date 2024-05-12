@@ -1,19 +1,15 @@
-import { Badge, Card } from "antd";
 import styles from "./Skill.module.css";
-import Meta from "antd/es/card/Meta";
 
-type ExpertiseLevel = 1 | 2 | 3 | 4 | 5;
+type proficiencyLevel = 1 | 2 | 3;
 
-type ExpertiseMap = {
-  [key in ExpertiseLevel]: string;
+type proficiencyMap = {
+  [key in proficiencyLevel]: string;
 };
 
-const expertiseMap: ExpertiseMap = {
+const proficiencyMap: proficiencyMap = {
   1: "Beginner",
   2: "Intermediate",
   3: "Proficient",
-  4: "Advanced",
-  5: "Expert",
 };
 
 type SkillProps = {
@@ -23,7 +19,8 @@ type SkillProps = {
 };
 
 const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
-  const expertiseText = expertiseMap[expertise as ExpertiseLevel] ?? "Unknown";
+  const expertiseText =
+    proficiencyMap[expertise as proficiencyLevel] ?? "Unknown";
 
   return (
     <article>
@@ -34,7 +31,7 @@ const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
       />
       <div>
         <h1>{name}</h1>
-        <p className={styles[`skill${expertise}`]}>{expertiseText}</p>
+        <p className={styles[`proficiency${expertise}`]}>{expertiseText}</p>
       </div>
     </article>
   );

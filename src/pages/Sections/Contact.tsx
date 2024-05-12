@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="contact-info-container">
           <img
-            src="src/assets/linkedin.png"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
             alt="LinkedIn icon"
             className="icon contact-icon"
           />

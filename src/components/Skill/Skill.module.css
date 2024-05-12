@@ -17,22 +17,14 @@ article .icon {
   margin-bottom: 0; /* Remove default margin-bottom */
 }
 
-.skill1 {
-  color: rgb(155, 155, 155);
+.proficiency1 {
+  color: #945b22;
 }
 
-.skill2 {
-  color: rgb(199, 125, 72);
+.proficiency2 {
+  color: rgb(124, 124, 124);
 }
 
-.skill3 {
-  color: rgb(82, 158, 114); /* Proficient (green) */
-}
-
-.skill4 {
-  color: rgb(157, 104, 211); /* Advanced (yellow) */
-}
-
-.skill5 {
-  color: rgb(223, 84, 82); /* Expert (red) */
+.proficiency3 {
+  color: rgb(209, 150, 1);
 }

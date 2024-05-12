@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
   const techs: Skill[] = [
     {
       name: "Linux",
-      expertise: 4,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
     },
     {

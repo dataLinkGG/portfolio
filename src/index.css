@@ -565,3 +565,7 @@ footer p {
 .glass:hover {
   transform: scale(1.1);
 }
+
+.largeIcon {
+  font-size: 2rem;
+}

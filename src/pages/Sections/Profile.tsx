@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
 import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
+import IconLink from "../../components/IconLink/IconLink";
 
 const Profile: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
@@ -14,6 +16,8 @@ const Profile: React.FC = () => {
 
   const myName = "Thomas Cionek";
   const jobTitle = "Junior Full Stack Developer";
+  const myLinkedin = "https://www.linkedin.com/in/thomas-cionek-123669145/";
+  const myGithub = "https://github.com/dataLinkGG";
 
   return (
     <section>
@@ -52,18 +56,12 @@ const Profile: React.FC = () => {
             </Button>
           </div>
           <div id="socials-container">
-            <img
-              src="src/assets/linkedin.png"
-              alt="My LinkedIn profile"
-              className="icon"
-              onClick={() => (location.href = "https://linkedin.com/")} // Inline function
-            />
-            <img
-              src="src/assets/github.png"
-              alt="My Github profile"
-              className="icon"
-              onClick={() => (location.href = "https://github.com/")} // Inline function
-            />
+            <IconLink url={myLinkedin} altText="My Github profile">
+              <LinkedinOutlined className="largeIcon" />
+            </IconLink>
+            <IconLink url={myGithub} altText="My Github profile">
+              <GithubOutlined className="largeIcon" />
+            </IconLink>
           </div>
         </div>
       </div>

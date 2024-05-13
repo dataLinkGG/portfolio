@@ -98,7 +98,7 @@ const Experience: React.FC = () => {
           </div>
         </div>
       </div>
-      <h2>The technologies I have worked with</h2>
+      <h2>Technologies</h2>
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">

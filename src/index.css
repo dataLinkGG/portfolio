@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -350,9 +346,9 @@ section {
 
 .article-container {
   display: flex;
+  width: 100%;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -442,7 +438,8 @@ footer p {
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #experience,
+  #about {
     height: fit-content;
   }
 }
@@ -484,6 +481,9 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+  section {
+    height: fit-content;
+  }
   #contact,
   footer {
     height: 40vh;

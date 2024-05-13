@@ -18,19 +18,19 @@ article:hover {
 }
 
 .proficiency1 {
-  /* color: #7a4b1c; */
+  color: #7a4b1c;
   font-weight: 200;
   font-size: xx-small;
 }
 
 .proficiency2 {
-  /* color: rgb(99, 99, 99); */
-  font-weight: 500;
+  color: rgb(99, 99, 99);
+  font-weight: 600;
   font-size: xx-small;
 }
 
 .proficiency3 {
-  /* color: goldenrod; */
-  font-weight: 600;
+  color: goldenrod;
+  font-weight: 800;
   font-size: xx-small;
 }

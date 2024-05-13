@@ -14,13 +14,12 @@ const proficiencyMap: proficiencyMap = {
 
 type SkillProps = {
   name: string;
-  expertise: number;
+  expertise?: number;
   icon?: string;
 };
 
 const Skill: React.FC<SkillProps> = ({ name, expertise, icon }) => {
-  const expertiseText =
-    proficiencyMap[expertise as proficiencyLevel] ?? "Unknown";
+  const expertiseText = proficiencyMap[expertise as proficiencyLevel] ?? "";
 
   return (
     <article>

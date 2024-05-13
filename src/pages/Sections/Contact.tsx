@@ -1,11 +1,10 @@
 import React from "react";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
+import { Tooltip } from "antd";
 
 const Contact: React.FC = () => {
   const myEmail = "thomascionek97@gmail.com";
-  const myLinkedin = "https://www.linkedin.com/in/thomas-cionek-123669145/";
+  const myWhats = "https://wa.me/5541988409682";
 
   return (
     <section id="contact">
@@ -13,18 +12,27 @@ const Contact: React.FC = () => {
       <h1 className="title">Contact Me</h1>
       <div className="contact-info-upper-container">
         <div className="contact-info-container">
-          <FontAwesomeIcon icon={faEnvelope} />
+          <MailOutlined />
           <p>
-            <a href={`mailto:${myEmail}`}>{myEmail}</a>
+            <a href={`mailto:${myEmail}`} target="_blank">
+              {myEmail}
+            </a>
           </p>
         </div>
         <div className="contact-info-container">
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <WhatsAppOutlined />
           <p>
-            <a href={myLinkedin}>LinkedIn</a>
+            <a href={myWhats} target="_blank">
+              WhatsApp
+            </a>
           </p>
         </div>
       </div>
+      <Tooltip placement="bottom" title={"My Linkedin Profile"}>
+        <div>
+          <img src="src/assets/QR.png" alt="" />
+        </div>
+      </Tooltip>
     </section>
   );
 };

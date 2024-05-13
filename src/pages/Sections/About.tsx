@@ -8,7 +8,6 @@ import React from "react";
 
 const About: React.FC = () => {
   const jobTitle = "Full Stack Development";
-  const years = 1;
 
   return (
     <section id="about">
@@ -21,20 +20,33 @@ const About: React.FC = () => {
               <div className="details-container">
                 <FontAwesomeIcon icon={faBriefcase} />
                 <h3>Experience</h3>
+                <br />
                 <p>
-                  {years}+ year
-                  <br />
                   {jobTitle}
+                  <br />
+                  Alude YC W20
+                  <br />
                 </p>
               </div>
               <div className="details-container">
-                <FontAwesomeIcon icon={faGraduationCap} />
-                <h3>Education</h3>
-                <p>
-                  B.Sc. Bachelors Degree
+                <div>
+                  <FontAwesomeIcon icon={faGraduationCap} />
+                  <h3>Education</h3>
                   <br />
-                  M.Sc. Masters Degree
-                </p>
+                  <p>
+                    Análise e Desenvolvimento de Sistemas
+                    <br /> (August 2022 - August 2024)
+                    <br />
+                  </p>
+                  <br />
+                  <p>
+                    Computer Science <br /> (2016)
+                  </p>
+                  <br />
+                  <p>
+                    Engenharia Elétrica e Eletrônica <br /> (February 2015)
+                  </p>
+                </div>
               </div>
             </div>
             <div className="text-container">

@@ -6,7 +6,7 @@ import AppTitle from "./components/AppTitle";
 function App() {
   return (
     <div className="container">
-      <AppTitle title="Thomas Cionek" /> {/* Set the base title */}
+      <AppTitle title="Thomas Cionek" />
       <Nav />
       <Outlet />
     </div>

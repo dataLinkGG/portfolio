@@ -4,6 +4,7 @@ import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import IconLink from "../../components/IconLink/IconLink";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
+import { DownOutlined } from "@ant-design/icons";
 
 const ProfileSection: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
@@ -59,6 +60,7 @@ const ProfileSection: React.FC = () => {
           </div>
         </div>
       </div>
+      <DownOutlined />
     </section>
   );
 };

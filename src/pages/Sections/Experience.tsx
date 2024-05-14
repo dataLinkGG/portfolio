@@ -16,13 +16,18 @@ const Experience: React.FC = () => {
     },
     {
       name: "JavaScript",
-      expertise: 2,
+      expertise: 3,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
       name: "PostegreSQL",
-      expertise: 1,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    },
+    {
+      name: "Bash",
+      expertise: 1,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
     },
   ];
 
@@ -32,20 +37,52 @@ const Experience: React.FC = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
     },
     {
-      name: "Git/Github",
+      name: "Git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     },
     {
-      name: "Flask",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+      name: "Github",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    },
+    {
+      name: "Vim",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
     },
     {
       name: "React",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     },
     {
-      name: "Postman",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      name: "Yarn",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yarn/yarn-original.svg",
+    },
+    {
+      name: "Jest",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+    },
+    {
+      name: "Pytest",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg",
+    },
+    {
+      name: "Flask",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+    },
+    {
+      name: "Poetry",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/poetry/poetry-original.svg",
+    },
+    {
+      name: "Less",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/less/less-plain-wordmark.svg",
+    },
+    {
+      name: "Liquibase",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/liquibase/liquibase-original-wordmark.svg",
+    },
+    {
+      name: "Docker",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     },
     {
       name: "Postman",
@@ -56,24 +93,8 @@ const Experience: React.FC = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     },
     {
-      name: "Pytest",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg",
-    },
-    {
-      name: "Jest",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
-    },
-    {
-      name: "Vim",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
-    },
-    {
-      name: "Liquibase",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/liquibase/liquibase-original-wordmark.svg",
-    },
-    {
-      name: "Docker",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+      name: "Notion",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
     },
   ];
 
@@ -84,6 +105,7 @@ const Experience: React.FC = () => {
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
+            <h3 className="experience-sub-title">Languages</h3>
             <div className="article-container">
               {languages.map((language) => (
                 <Skill key={language.name} {...language} />

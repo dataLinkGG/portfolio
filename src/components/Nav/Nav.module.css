@@ -46,9 +46,7 @@ a {
 
 a:hover {
   color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration: none;
 }
 
 .logo img {
@@ -254,8 +252,6 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-
-
 
 .section-container {
   gap: 4rem;

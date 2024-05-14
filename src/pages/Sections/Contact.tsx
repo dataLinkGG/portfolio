@@ -7,7 +7,7 @@ const Contact = () => {
       <p className="section__text__p1">Get in Touch</p>
       <h1 className="title">Contact Me</h1>
 
-      <Tooltip placement="bottom" title={"Scan to chat with me!"}>
+      <Tooltip placement="top" title={"Scan to chat with me!"}>
         <div>
           <img
             className="qr-code"

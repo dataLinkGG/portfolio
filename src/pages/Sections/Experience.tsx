@@ -16,18 +16,13 @@ const Experience: React.FC = () => {
     },
     {
       name: "JavaScript",
-      expertise: 3,
+      expertise: 2,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
       name: "PostegreSQL",
-      expertise: 2,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-    },
-    {
-      name: "C Language",
       expertise: 1,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     },
   ];
 
@@ -86,7 +81,6 @@ const Experience: React.FC = () => {
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
       <h1 className="title">Skill Set</h1>
-      <h2>Languages</h2>
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
@@ -98,10 +92,10 @@ const Experience: React.FC = () => {
           </div>
         </div>
       </div>
-      <h2>Technologies</h2>
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
+            <h3 className="experience-sub-title">Technologies</h3>
             <div className="article-container">
               {skills.map((skill) => (
                 <Skill key={skill.name} {...skill} />

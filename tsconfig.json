@@ -21,8 +21,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "exclude": [
-    "src/components/DownOutlined.tsx" // Add the specific file path
-  ],
+  "exclude": ["src/components/DownOutlined/DownOutlined.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

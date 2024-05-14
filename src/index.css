@@ -563,10 +563,6 @@ footer p {
   transition: transform 0.4s ease-in;
 }
 
-.glass:hover {
-  transform: scale(1.1);
-}
-
 .largeIcon {
   font-size: 2rem;
 }
@@ -574,4 +570,10 @@ footer p {
 .qr-code {
   width: 300px;
   height: 300px;
+}
+
+.qr-code:hover,
+.glass:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in;
 }

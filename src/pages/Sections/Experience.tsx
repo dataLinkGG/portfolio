@@ -102,25 +102,19 @@ const Experience: React.FC = () => {
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
       <h1 className="title">Skill Set</h1>
-      <div className="experience-details-container">
-        <div className="about-containers">
-          <div className="details-container">
-            <h3 className="experience-sub-title">Languages</h3>
-            <div className="article-container">
-              {languages.map((language) => (
-                <Skill key={language.name} {...language} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
             <h3 className="experience-sub-title">
-              Technologies I am familar with
+              Technologies I have worked with
             </h3>
             <div className="article-container">
+              <div className="article-container">
+                {languages.map((language) => (
+                  <Skill key={language.name} {...language} />
+                ))}
+              </div>
               {skills.map((skill) => (
                 <Skill key={skill.name} {...skill} />
               ))}

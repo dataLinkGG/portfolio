@@ -68,10 +68,10 @@ const ContactInfo: React.FC = () => {
         destroyOnClose
         title="Contact Information"
         placement="right"
-        closable={false}
         open={open}
+        width={500}
         loading={loading}
-        onClose={() => setOpen(false)}
+        onClose={onClose}
         extra={
           <Space>
             <Button type="primary" onClick={onClose}>

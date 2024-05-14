@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Nav from "../../components/Nav/Nav";
 import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import IconLink from "../../components/IconLink/IconLink";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
-const Profile: React.FC = () => {
+const ProfileSection: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
 
   useEffect(() => {
@@ -22,7 +21,6 @@ const Profile: React.FC = () => {
 
   return (
     <section>
-      <Nav />
       <div id="profile">
         {isMobile ? undefined : (
           <div className="section__pic-container">
@@ -65,4 +63,4 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
+export default ProfileSection;

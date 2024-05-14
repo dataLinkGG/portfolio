@@ -4,11 +4,10 @@ import {
   faBullseye,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
-
 import React from "react";
 import { Tooltip } from "antd";
 
-const About: React.FC = () => {
+const AboutSection: React.FC = () => {
   const jobTitle = "Full Stack Development";
 
   return (
@@ -69,8 +68,9 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
+      <br />
     </section>
   );
 };
 
-export default About;
+export default AboutSection;

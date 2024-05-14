@@ -7,7 +7,7 @@ interface Skill {
   icon: string;
 }
 
-const Experience: React.FC = () => {
+const ExperienceSection: React.FC = () => {
   const languages: Skill[] = [
     {
       name: "Python",
@@ -126,4 +126,4 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export default ExperienceSection;

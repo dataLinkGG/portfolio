@@ -1,6 +1,6 @@
 import { Button, Tooltip } from "antd";
 
-const Contact = () => {
+const ContactSection = () => {
   const linkToWhatsAppChat = "https://wa.me/5541988409682";
 
   return (
@@ -29,4 +29,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

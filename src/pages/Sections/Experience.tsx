@@ -117,7 +117,9 @@ const Experience: React.FC = () => {
       <div className="experience-details-container">
         <div className="about-containers">
           <div className="details-container">
-            <h3 className="experience-sub-title">Technologies</h3>
+            <h3 className="experience-sub-title">
+              Technologies I am familar with
+            </h3>
             <div className="article-container">
               {skills.map((skill) => (
                 <Skill key={skill.name} {...skill} />

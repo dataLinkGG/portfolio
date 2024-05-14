@@ -39,13 +39,6 @@ const About: React.FC = () => {
                     <br />
                   </p>
                   <br />
-                  <p>
-                    Computer Science <br /> (2016)
-                  </p>
-                  <br />
-                  <p>
-                    Engenharia Elétrica e Eletrônica <br /> (February 2015)
-                  </p>
                 </div>
               </div>
             </div>

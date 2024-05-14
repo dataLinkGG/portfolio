@@ -59,8 +59,8 @@ const About: React.FC = () => {
                   <h3>Goal</h3>
                   <br />
                   <p>
-                    Seeking new junior-level opportunities as a Front End, Back
-                    end or Full Stack developer
+                    Open for Freelancing projects and seeking new junior-level
+                    opportunities as a Full Stack developer.
                   </p>
                   <br />
                 </div>

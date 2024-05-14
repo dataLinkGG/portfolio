@@ -10,6 +10,9 @@ const ContactInfo: React.FC = () => {
   const [open, setOpen] = React.useState(false);
   const [loading, setLoading] = React.useState<DrawerProps["loading"]>(true);
   const timerRef = React.useRef<ReturnType<typeof setTimeout>>();
+  const myEmail = "thomascionek97@gmail.com";
+  const linkToWhatsAppChat = "https://wa.me/5541988409682";
+  const myNumber = " +55 (41) 98840-9682";
 
   const clearTimer = () => {
     if (timerRef.current) {
@@ -31,9 +34,6 @@ const ContactInfo: React.FC = () => {
     setOpen(false);
   };
 
-  const myEmail = "thomascionek97@gmail.com";
-  const myWhats = "https://wa.me/5541988409682";
-  const myNumber = " +55 (41) 98840-9682";
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard
@@ -81,7 +81,7 @@ const ContactInfo: React.FC = () => {
         }
       >
         <div className="contact-info-upper-container">
-          <Tooltip placement="right" title={"Click to Copy"}>
+          <Tooltip placement="right" title={"Click to copy"}>
             <div className="contact-info-container">
               <Button type="text" onClick={() => copyToClipboard(myEmail)}>
                 <MailOutlined />
@@ -89,11 +89,11 @@ const ContactInfo: React.FC = () => {
               </Button>
             </div>
           </Tooltip>
-          <Tooltip placement="right" title={"Click to chat on WhatsApp web"}>
+          <Tooltip placement="right" title={"Click to copy"}>
             <div className="contact-info-container">
               <Button type="text" onClick={() => copyToClipboard(myEmail)}>
                 <WhatsAppOutlined />
-                <a href={myWhats} target="_blank">
+                <a href={linkToWhatsAppChat} target="_blank">
                   {myNumber}
                 </a>
               </Button>

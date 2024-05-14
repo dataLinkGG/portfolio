@@ -4,6 +4,7 @@ import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import IconLink from "../../components/IconLink/IconLink";
+import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
 const Profile: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1400);
@@ -48,14 +49,7 @@ const Profile: React.FC = () => {
             >
               Download CV
             </Button>
-            <Button
-              type="primary"
-              shape="round"
-              size={"large"}
-              onClick={() => {}}
-            >
-              Contact info
-            </Button>
+            <ContactInfo />
           </div>
           <div id="socials-container">
             <IconLink url={myLinkedin} altText="My Github profile">

@@ -42,7 +42,9 @@ const Profile: React.FC = () => {
               shape="round"
               size={"large"}
               icon={<DownloadOutlined />}
-              onClick={() => {}}
+              onClick={() => {
+                window.open("src/assets/CV_Thomas_Cionek_EN.pdf");
+              }}
             >
               Download CV
             </Button>

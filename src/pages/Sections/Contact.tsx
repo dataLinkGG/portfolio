@@ -1,9 +1,5 @@
 import React, { useMemo } from "react";
-import {
-  MailOutlined,
-  WhatsAppOutlined,
-  CopyOutlined,
-} from "@ant-design/icons";
+import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import { Tooltip, notification } from "antd";
 import { Button } from "antd";
 import type { NotificationArgsProps } from "antd";
